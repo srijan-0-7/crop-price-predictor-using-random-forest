@@ -1,10 +1,10 @@
-# 🌾 Crop Price Prediction using Random Forest
+#  Crop Price Prediction using Random Forest
 
 This project builds a robust machine learning pipeline to predict crop modal prices based on market, location, season, and temporal features. It leverages real-world agricultural data and visual analytics to uncover pricing patterns and deliver actionable insights for farmers, traders, and policymakers.
 
 ---
 
-## 📁 Dataset
+##  Dataset
 
 - **Source**: `cropds.csv`
 - **Contents**: Crop prices across Indian states, districts, and markets over time.
@@ -15,7 +15,7 @@ This project builds a robust machine learning pipeline to predict crop modal pri
 
 ---
 
-## 🧼 Data Preprocessing
+##  Data Preprocessing
 
 - Missing values handled using `na_values='='`
 - Outliers removed using **IQR method** for `Modal Price`
@@ -26,7 +26,7 @@ This project builds a robust machine learning pipeline to predict crop modal pri
 
 ---
 
-## 📊 Visualizations
+##  Visualizations
 
 - **Boxplots** to detect price outliers
 - **Line plots** to explore seasonal and geographic price trends
@@ -35,7 +35,7 @@ This project builds a robust machine learning pipeline to predict crop modal pri
 
 ---
 
-## 🔢 Feature Encoding
+##  Feature Encoding
 
 All categorical variables were numerically encoded using dictionary mapping:
 - `Commodity_name`, `State`, `District`, `Market`
@@ -43,7 +43,7 @@ All categorical variables were numerically encoded using dictionary mapping:
 
 ---
 
-## 🧠 Model: Random Forest Regressor
+##  Model: Random Forest Regressor
 
 - **Algorithm**: `RandomForestRegressor` from `scikit-learn`
 - **Parameters**:
@@ -53,14 +53,14 @@ All categorical variables were numerically encoded using dictionary mapping:
 
 ---
 
-## 📈 Evaluation
+##  Evaluation
 
 - Metric: **R² Score** to measure prediction accuracy
 - Output: Predicted modal prices for unseen data
 
 ---
 
-## 🧪 Sample Prediction
+##  Sample Prediction
 
 ```python
 user_input = [[166, 24, 155, 954, 1, 0, 6]]
